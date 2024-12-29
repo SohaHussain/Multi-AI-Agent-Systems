@@ -15,4 +15,12 @@ One thing that makes these agents super powerful is the ability to use tools. To
 Multi agent systems grow on top of the agent system, where instead of just having one agent, we have multiple of them. 
 
 For example, if we task an agent with something, that agent can also task another agent with a different problem, providing one single final answer in the end. With the multi agent systems, we an customise a single agent 
-to don one task as desired. We can also run each agent on a different LLM. 
+to do one task as desired. We can also run each agent on a different LLM. 
+
+# Key Elements of AI Agents
+- Role/ Backstory - providing a context to the agent
+- Focus - providing specific tools, context, job for the agent to focus on so that it does not hallucinate
+- Tools - provide the agent with specific and limited tools to use so that it does not get confused
+- Cooperation - take feedback/delegate work from/to other agents to improve their response
+- Guardrails - guardrails prevents the agents from derailing and nudge them to stay on track
+- Memory - ability of agents to remember its previous actions, learn from it and use that data for new executions
