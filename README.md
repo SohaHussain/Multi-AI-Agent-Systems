@@ -1,4 +1,4 @@
-# Multi-AI-Agent-Systems
+# Multi AI Agent Systems
 
 ## Agentic Automation
 With the traditional automation, we would write code to automate a process and as the edge cases would start to appear, the code would become more and more complex. At the end, we would end up with a very complex code base with multiple edge cases to cover all the scenarios.
@@ -26,3 +26,9 @@ to do one task as desired. We can also run each agent on a different LLM.
 - Cooperation - take feedback/delegate work from/to other agents to improve their response
 - Guardrails - guardrails prevents the agents from derailing and nudge them to stay on track
 - Memory - ability of agents to remember its previous actions, learn from it and use that data for new executions
+
+## Key Elements of Agent Tools
+Tools allow agents to communicate with the external world 
+- Versatile - tool should be able to accept different kinds of request, it needs to be versatile enough to handle the fuzzy inputs of the LLMs
+- Fault Tolerant - incase of some failure, the tool should be able to send a message back to the agent so that agent can take some action on it, instead of just stopping the whole process
+- Caching  - most of the times, the tool will be communicating with the web through different apis, etc. We have to make sure that the tool takes time to do the request and does not call api for unnecessary requests. So a cackinh layers prevents these unnecessary calls from happening and builds an optimal process. There can be multi agent cache, where if two or more agents are using the same tools with the same arguments, they will be using the caching layer and actually doing an api call. 
